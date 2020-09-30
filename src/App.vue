@@ -2,7 +2,7 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <div class="start-receiving" @click="startReceiving">START_RECIEVING</div>
+    <div class="start-receiving" @click="startReceiving">START_RECEIVING</div>
     <div class="topic" @click="topic(`sampleTopic`)">TOPIC</div>
     <div class="stop-receiving" @click="stopReceiving">STOP_RECIEVING</div>
   </div>
@@ -19,7 +19,7 @@ export default {
   methods: {
     startReceiving() {
       console.log('FcmStartRecieving')
-      window.webkit.messageHandlers.FCM.postMessage(`START_RECIEVING`);
+      window.webkit.messageHandlers.FCM.postMessage(`START_RECEIVING`);
     },
     topic(topic) {
       console.log('FcmRegisterTopic')
